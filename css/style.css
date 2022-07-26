@@ -1,0 +1,10 @@
+@import "greeting.css";
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: rgba(102, 103, 171, 0.2);
+}
+
