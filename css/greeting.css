@@ -1,3 +1,6 @@
+.transform {
+       transform:translate(10px, 10px);
+}
 .intro-set {
     color: rgba(84, 85, 141, 0.9);
     display: flex;
@@ -11,8 +14,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
-.login-form input:first-child {
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form input:first-child, .todo-list-form input:first-child {
     border: none;
     border-bottom: 3px solid rgba(102, 103, 171, 0.4);
     border-radius: 7%;
@@ -22,19 +31,19 @@
     /* border-color는 꼭 필요한가 ? */
     transition: border-color 0.3s ease-in-out;
 }
-.login-form input::placeholder {
+.login-form input::placeholder, .todo-list-form input::placeholder {
     color:rgba(102, 103, 171, 0.5);
 }
-.login-form input:focus {
+.login-form input:focus, .todo-list-form input:focus {
     outline: none;  /* 전체로 이동 */
     border-color:rgba(102, 103, 171, 0.9);
     color:rgba(102, 103, 171, 0.9);
 }
 /* placeholder focus 시 감추기 */
-.login-form input:focus::placeholder {
+.login-form input:focus::placeholder, .todo-list-form input:focus::placeholder {
     color: transparent;
 }
-.login-form input:last-child {
+.login-form input:last-child, .todo-list-form input:last-child {
     border: none;
     padding: 7px;
     margin-left: 6px;
@@ -42,4 +51,19 @@
     border: 3px solid rgba(102, 103, 171, 0.4);
     background-color: transparent;
     color:rgba(84, 85, 141, 0.9);
+    cursor: pointer;
+}
+.intro-user {
+    color: rgba(84, 85, 141, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 0px;
+    /* margin-top: 74px; */
+}
+.todo-list-form {
+    display: flex;
+    justify-content: center;
 }
